@@ -39,13 +39,25 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAv-wB-G1A">
+                                <rect key="frame" x="285" y="107" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="pencil" catalog="system"/>
+                                <connections>
+                                    <action selector="promptForLocation" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bf3-Fm-Ymg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EAv-wB-G1A" secondAttribute="trailing" constant="62" id="Xe4-gN-mEj"/>
+                            <constraint firstItem="1xj-5X-5Iu" firstAttribute="top" secondItem="EAv-wB-G1A" secondAttribute="bottom" constant="30.5" id="fho-xL-JFm"/>
                             <constraint firstItem="92E-YF-cSk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="j68-KZ-VVJ"/>
                             <constraint firstItem="1xj-5X-5Iu" firstAttribute="top" secondItem="92E-YF-cSk" secondAttribute="bottom" constant="30" id="my7-0m-6Kv"/>
+                            <constraint firstItem="EAv-wB-G1A" firstAttribute="leading" secondItem="92E-YF-cSk" secondAttribute="trailing" constant="57" id="rxj-rb-MLi"/>
                             <constraint firstItem="1xj-5X-5Iu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="t0I-RC-hnH"/>
+                            <constraint firstItem="EAv-wB-G1A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="tlb-PM-iIO"/>
                             <constraint firstItem="92E-YF-cSk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uBC-QB-1BE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1xj-5X-5Iu" secondAttribute="trailing" constant="10" id="xSr-uM-ulo"/>
                         </constraints>
@@ -131,6 +143,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
